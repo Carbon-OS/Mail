@@ -1,5 +1,5 @@
 rednet.open("top")
 while true do
-id, message = rednet.receive(2)
+id, message = rednet.receive(2) -- i know its meant to stop after 2 seconds... but after 2 seconds the program throws an error and shuts down... does it have anything to do with the next line?
 rednet.send(id,"response")
 end
