@@ -1,3 +1,5 @@
 rednet.open("top")
 while true do
-id, messagee = rednet.receive(2)
+id, message = rednet.receive(2)
+rednet.send(id,"response")
+end
